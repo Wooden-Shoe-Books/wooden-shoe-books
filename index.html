@@ -4,16 +4,14 @@
   <title>Wooden Shoe Books &amp; Records - Home</title>
   <style>
   body {
-  background-color: black; 
-  color: #FFC0CB; /* Soft pink */ 
-  font-family: 'RippedPoster', cursive; /* Choose your messy font */
+  background: black;
   margin: 0; /* Reset default margins */
 }
 
 header {
   text-align: center;
   padding: 15px 0; 
-  border-bottom: 3px solid #00FF00; /* Neon green border */
+  background: yellow;
 }
 
 header img {
@@ -22,16 +20,54 @@ header img {
 }
 
 .main-content {
+  background: #ff00e4;
   display: flex; 
   flex-wrap: wrap;
   justify-content: space-around;
 } 
 
 .column { 
+  background: white;
   flex: 1;
   margin: 10px;
   padding: 15px;
-  border: 2px dashed #FF00FF; /* Dotted hot pink border */
+  border: 2px #ff00e4;
+}
+
+.infobar {
+    overflow: hidden;
+    background-color: black;
+        color: #f2f2f2;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,.5);
+}
+
+
+.navbar {
+    overflow: hidden;
+    background-color: black;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,.5);
+}
+
+
+
+.navbar a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 17px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
 }
 
 .callouts { 
@@ -58,65 +94,68 @@ footer {
   .main-content {
     flex-direction: column; /* Stack columns on smaller screens */
   }
-
-  header img {
-    max-width: 95%; /* Logo takes up most of screen width */
-  }
 }
 </style>
 
 </head>
 <body>
+
+  <div class="infobar">
+    704 South Street Philadelphia, PA 19147 (215) 413-0999 
+  </div>
+  
   <header> 
-    <img src="logo.jpg" alt="Wooden Shoe Books Logo">  
-    <h1>Wooden Shoe Books: Anarchy in Action!</h1> 
+    <img src="logos/sabot_right.gif" alt="Sabot">  
+    <img src="logos/logo.gif" alt="Wooden Shoe Books Logo"> 
   </header> 
+  
+  <div class="navbar">
+        <a href="mission.html">Mission</a>
+        <a href="history.html">History</a>
+        <a href="https://calendar.google.com/calendar/embed?src=t8qmive63n27mdj7gt03ntc2u8@group.calendar.google.com
+">Calendar</a>
+  </div>
+  
 
   <section class="main-content"> 
     <div class="column">
       <h2>We're Open-ish!</h2> 
-      <p>If the lights are on, we're in! (But, capitalism sucks, so hours are weird...call ahead: 215-413-0999)</p> 
-      <iframe src="https://calendar.google.com/calendar/u/0/embed?showCalendars=0&height=600&wkst=1&bgcolor=%23CCCC99&src=t8qmive63n27mdj7gt03ntc2u8@group.calendar.google.com&color=%23B1365F&ctz=America/New_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+      <p>We aspire to be open from noon (or earlier) to 10pm, 7 days a week, but... we're all volunteers, and sometimes it just doesn't work out. If you're making a special trip to the Shoe it's a good idea to call ahead to make sure we're open: (215) 413-0999</p> 
 
-      <h2>Follow Our Chaos:</h2>
-      <a href="http://twitter.com/woodenshoebooks">Twitter</a> / 
-      <a href="https://www.facebook.com/WoodenShoeBooks">Facebook </a> 
+      <a href="https://www.woodenshoebooks.org/mission.html#volunteerinfo">Volunteer Info</a>
+      <a href="mailto:shoeannounce@lists.riseup.net">Email List Signup</a>
+      <a href="mailto:wonderfulthings@woodenshoebooks.com">Email Us</a>
+      <a href="http://twitter.com/woodenshoebooks">Twitter</a> 
+      <a href="https://www.facebook.com/WoodenShoeBooks">Facebook</a> 
 
     </div>
 
    <div class="column">
-      <p>Your source for radical books, zines, and general weirdness since 1976.  Run by volunteers, fueled by caffeine and rage against the machine.</p>
-      <form action="https://www.paypal.com/donate" method="post" target="_top">
-        <input type="hidden" name="hosted_button_id" value="4XWP3BLV3FUWE">
-        <input type="image" src="donate-button.jpg" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button">
-       </form>
-      <p>Book Clubs: Get 10% off when you order 3+ copies of the same book!</p>
+      <p><b>What Is Anarchism? What Is The Wooden Shoe?</b> To put it simply, anarchism is the the political philosophy that people are better off making decisions for themselves, and communities making decisions for their communities, rather than having any centralized power/governing body do it for them. Furthermore, anarchism is opposed to capitalism and all systems of oppression that attempt to exploit or control.</p>
+
+<p>Founded in 1976, the Wooden Shoe is an all volunteer, collectively-run, anarchist book store. Functioning within a system we oppose, we seek to be an example of one way things can function without anyone commanding or forcing us to think or act a certain way. We have no bosses, managers, or employeesand make all of our decisions through consensus rather than majority rule voting so as to empower those involved. We also identify as an infoshop, meaning that we serve as a space for people to gather, learn, and find out more about like-minded activities happening in their communities.</p>
+
     </div> 
 
     <div class="column">  
       <h2>Our Manifesto</h2>
       <h2>Free Computer!</h2>
-      <p>Ask for rules!</p> 
       <h2>Donate Books = Brighter Futures</h2>
-      <img src="kids-books-promo.jpg" alt="Kids Reading Books"> 
-      <a href="mailto:wonderfulthings@woodenshoebooks.com">Email Us</a>
+      <p>Book Clubs: Get 10% off when you order 3+ copies of the same book!</p>
+
     </div>
   </section> 
 
-  <section class="callouts"> 
-     <div>
-        <h2>Join Us!</h2>
-        <a href="https://www.woodenshoebooks.org/mission.html#volunteerinfo">Volunteer Info</a>
-     </div>
-     <div>
-        <h2>Get the Inside Scoop</h2>
-        <a href="mailto:shoeannounce@lists.riseup.net">Email Signup</a>
-     </div>
-  </section> 
+    <div class="navbar">
+        <a href="publications.html">Publications</a>
+        <a href="links.html">Links</a>
+        <a href="photos.html">Photos</a>
+    </div>
 
-  <footer>
-    Wooden Shoe Books - 704 South Street - Philadelphia, PA 19147 - sabot@woodenshoebooks.com - (215) 413-0999
-  </footer>
+    <div class="infobar">
+    704 South Street Philadelphia, PA 19147 (215) 413-0999 
+    </div>
+
 </body>
 </html>
 
