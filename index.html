@@ -19,6 +19,10 @@ header img {
   height: auto;  
 }
 
+ul {
+    list-style-type: none;
+}
+
 .main-content {
   background: #ff00e4;
   display: flex; 
@@ -37,13 +41,23 @@ header img {
 .infobar {
     overflow: hidden;
     background-color: black;
-        color: #f2f2f2;
     top: 0;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 0 2px 4px rgba(0,0,0,.5);
+}
+
+.infobar a {
+    color: #f2f2f2;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 17px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
 }
 
 
@@ -58,10 +72,9 @@ header img {
     box-shadow: 0 2px 4px rgba(0,0,0,.5);
 }
 
-
-
 .navbar a {
     color: #f2f2f2;
+    font-family: 'Courier New', Courier, monospace;
     text-align: center;
     padding: 10px 10px;
     text-decoration: none;
@@ -70,15 +83,14 @@ header img {
     transition: background-color 0.3s ease;
 }
 
-.callouts { 
-  background-color: #330033; /* Dark purple  */
-  color: white; 
-  padding: 15px;
+#promoImage {
+    width: 100%;
+    height: auto;
 }
 
-.callouts div { 
-  margin-bottom: 15px;
-  text-align: center; /* Center the callout content */
+#storeImage {
+    width: 100%;
+    height: auto;
 }
 
 footer { 
@@ -101,7 +113,8 @@ footer {
 <body>
 
   <div class="infobar">
-    704 South Street Philadelphia, PA 19147 (215) 413-0999 
+    <a href="https://maps.app.goo.gl/vVqfdARy7zdKvmag6" target="_blank">704 South Street Philadelphia, PA 19147</a>
+    <a href="tel:+12154130999">215-413-0999</a>
   </div>
   
   <header> 
@@ -110,51 +123,106 @@ footer {
   </header> 
   
   <div class="navbar">
-        <a href="mission.html">Mission</a>
-        <a href="history.html">History</a>
-        <a href="https://calendar.google.com/calendar/embed?src=t8qmive63n27mdj7gt03ntc2u8@group.calendar.google.com
-">Calendar</a>
+        <a href="mission.html">&#11088; Mission</a>
+        <a href="history.html">&#128220; History</a>
+        <a href="https://calendar.google.com/calendar/embed?src=t8qmive63n27mdj7gt03ntc2u8@group.calendar.google.com">&#128197; Calendar</a>
   </div>
   
 
   <section class="main-content"> 
     <div class="column">
       <h2>We're Open-ish!</h2> 
-      <p>We aspire to be open from noon (or earlier) to 10pm, 7 days a week, but... we're all volunteers, and sometimes it just doesn't work out. If you're making a special trip to the Shoe it's a good idea to call ahead to make sure we're open: (215) 413-0999</p> 
+      <p>We aspire to be open from noon (or earlier) to 10pm, 7 days a week, but... we're all volunteers, and sometimes it just doesn't work out. If you're making a special trip to the Shoe it's a good idea to call ahead to make sure we're open: <a href="tel:+12154130999">215-413-0999</a></p> 
 
-      <a href="https://www.woodenshoebooks.org/mission.html#volunteerinfo">Volunteer Info</a>
-      <a href="mailto:shoeannounce@lists.riseup.net">Email List Signup</a>
-      <a href="mailto:wonderfulthings@woodenshoebooks.com">Email Us</a>
-      <a href="http://twitter.com/woodenshoebooks">Twitter</a> 
-      <a href="https://www.facebook.com/WoodenShoeBooks">Facebook</a> 
+      <img id="storeImage" src="" alt="Store Image">
 
     </div>
 
    <div class="column">
       <p><b>What Is Anarchism? What Is The Wooden Shoe?</b> To put it simply, anarchism is the the political philosophy that people are better off making decisions for themselves, and communities making decisions for their communities, rather than having any centralized power/governing body do it for them. Furthermore, anarchism is opposed to capitalism and all systems of oppression that attempt to exploit or control.</p>
 
-<p>Founded in 1976, the Wooden Shoe is an all volunteer, collectively-run, anarchist book store. Functioning within a system we oppose, we seek to be an example of one way things can function without anyone commanding or forcing us to think or act a certain way. We have no bosses, managers, or employeesand make all of our decisions through consensus rather than majority rule voting so as to empower those involved. We also identify as an infoshop, meaning that we serve as a space for people to gather, learn, and find out more about like-minded activities happening in their communities.</p>
+  <p>Founded in 1976, the Wooden Shoe is an all volunteer, collectively-run, anarchist book store. Functioning within a system we oppose, we seek to be an example of one way things can function without anyone commanding or forcing us to think or act a certain way. We have no bosses, managers, or employeesand make all of our decisions through consensus rather than majority rule voting so as to empower those involved. We also identify as an infoshop, meaning that we serve as a space for people to gather, learn, and find out more about like-minded activities happening in their communities.</p>
+
+      <h2>Get Involved!</h2> 
+      <ul>
+          <li><a href="https://www.woodenshoebooks.org/mission.html#volunteerinfo">&#128587; Volunteer Info</a></li>
+          <li><a href="mailto:shoeannounce@lists.riseup.net">&#10084;&#65039; Email List Signup</a></li>
+          <li><a href="mailto:wonderfulthings@woodenshoebooks.com">&#128231; Email Us</a></li>
+          <li><a href="http://twitter.com/woodenshoebooks">&#128038; X/Twitter</a></li>
+          <li><a href="https://www.facebook.com/WoodenShoeBooks">&#128100; Facebook</a></li>
+          <li><a href="https://calendar.google.com/calendar/embed?src=t8qmive63n27mdj7gt03ntc2u8@group.calendar.google.com">&#128197; Google Calendar</a>
+      </ul>
 
     </div> 
 
     <div class="column">  
-      <h2>Our Manifesto</h2>
-      <h2>Free Computer!</h2>
-      <h2>Donate Books = Brighter Futures</h2>
-      <p>Book Clubs: Get 10% off when you order 3+ copies of the same book!</p>
-
+      <img id="promoImage" src="" alt="Promotion Image">
+      <ul>
+      <li>&#128213; 10% off hardcovers</li>
+      <li>&#129489;&#8205;&#129309;&#8205;&#129489;&#129489;&#8205;&#129309;&#8205;&#129489; 20% off for reading groups</li>
+      <li>&#129665; donate free kids books!</li>
+      </ul>
+      
+      <h2>"The Peoples Computer"</h2>
+      <p>We have an  Internet-connected computer available for free public use (sorry; no printer) <a href="flyers/WSB-PC-Policy.pdf">Here's our public-use Policy.</a></p>
+      
     </div>
   </section> 
 
     <div class="navbar">
-        <a href="publications.html">Publications</a>
-        <a href="links.html">Links</a>
-        <a href="photos.html">Photos</a>
+        <a href="publications.html">&#128218; Publications</a>
+        <a href="links.html">&#128279; Links</a>
+        <a href="donate.html">&#129330; Support</a>
     </div>
 
-    <div class="infobar">
-    704 South Street Philadelphia, PA 19147 (215) 413-0999 
-    </div>
+  <div class="infobar">
+    <a href="https://maps.app.goo.gl/vVqfdARy7zdKvmag6" target="_blank">704 South Street Philadelphia, PA 19147</a>
+    <a href="tel:+12154130999">215-413-0999</a>
+  </div>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const images = [
+          'posters/1.jpg',
+          'posters/2.jpg',
+          'posters/3.jpg',
+          // Add more image paths as needed
+      ];
+
+      let currentIndex = 0;
+
+      function rotatePosterImage() {
+          const imgElement = document.getElementById('promoImage');
+          imgElement.src = images[currentIndex];
+          currentIndex = (currentIndex + 1) % images.length;
+      }
+
+      rotatePosterImage(); // Initial call to display the first image
+      setInterval(rotatePosterImage, 6000);
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const images = [
+          'store/1.jpg',
+          'store/2.jpg',
+          'store/3.jpg',
+          'store/4.jpg',
+          'store/5.jpg',
+          // Add more image paths as needed
+      ];
+
+      let currentIndex = 0;
+
+      function rotateStoreImage() {
+          const imgElement = document.getElementById('storeImage');
+          imgElement.src = images[currentIndex];
+          currentIndex = (currentIndex + 1) % images.length;
+      }
+
+      rotateStoreImage(); // Initial call to display the first image
+      setInterval(rotateStoreImage, 6000);
+    });
+  </script>
 
 </body>
 </html>
