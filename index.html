@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wooden Shoe Books &amp; Records - Home</title>
+  <style>
+  body {
+  background-color: black; 
+  color: #FFC0CB; /* Soft pink */ 
+  font-family: 'RippedPoster', cursive; /* Choose your messy font */
+  margin: 0; /* Reset default margins */
+}
+
+header {
+  text-align: center;
+  padding: 15px 0; 
+  border-bottom: 3px solid #00FF00; /* Neon green border */
+}
+
+header img {
+  max-width: 80%; /* Limit logo size for smaller screens */
+  height: auto;  
+}
+
+.main-content {
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: space-around;
+} 
+
+.column { 
+  flex: 1;
+  margin: 10px;
+  padding: 15px;
+  border: 2px dashed #FF00FF; /* Dotted hot pink border */
+}
+
+.callouts { 
+  background-color: #330033; /* Dark purple  */
+  color: white; 
+  padding: 15px;
+}
+
+.callouts div { 
+  margin-bottom: 15px;
+  text-align: center; /* Center the callout content */
+}
+
+footer { 
+  background-color: black;
+  border-top: 2px solid #FF00FF; /* Hot pink border */
+  text-align: center;
+  padding: 10px; 
+  font-size: 0.8em; /* Smaller text in the footer */
+} 
+
+/* Simple Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+  .main-content {
+    flex-direction: column; /* Stack columns on smaller screens */
+  }
+
+  header img {
+    max-width: 95%; /* Logo takes up most of screen width */
+  }
+}
+</style>
+
+</head>
+<body>
+  <header> 
+    <img src="logo.jpg" alt="Wooden Shoe Books Logo">  
+    <h1>Wooden Shoe Books: Anarchy in Action!</h1> 
+  </header> 
+
+  <section class="main-content"> 
+    <div class="column">
+      <h2>We're Open-ish!</h2> 
+      <p>If the lights are on, we're in! (But, capitalism sucks, so hours are weird...call ahead: 215-413-0999)</p> 
+      <iframe src="https://calendar.google.com/calendar/u/0/embed?showCalendars=0&height=600&wkst=1&bgcolor=%23CCCC99&src=t8qmive63n27mdj7gt03ntc2u8@group.calendar.google.com&color=%23B1365F&ctz=America/New_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
+      <h2>Follow Our Chaos:</h2>
+      <a href="http://twitter.com/woodenshoebooks">Twitter</a> / 
+      <a href="https://www.facebook.com/WoodenShoeBooks">Facebook </a> 
+
+    </div>
+
+   <div class="column">
+      <p>Your source for radical books, zines, and general weirdness since 1976.  Run by volunteers, fueled by caffeine and rage against the machine.</p>
+      <form action="https://www.paypal.com/donate" method="post" target="_top">
+        <input type="hidden" name="hosted_button_id" value="4XWP3BLV3FUWE">
+        <input type="image" src="donate-button.jpg" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button">
+       </form>
+      <p>Book Clubs: Get 10% off when you order 3+ copies of the same book!</p>
+    </div> 
+
+    <div class="column">  
+      <h2>Our Manifesto</h2>
+      <h2>Free Computer!</h2>
+      <p>Ask for rules!</p> 
+      <h2>Donate Books = Brighter Futures</h2>
+      <img src="kids-books-promo.jpg" alt="Kids Reading Books"> 
+      <a href="mailto:wonderfulthings@woodenshoebooks.com">Email Us</a>
+    </div>
+  </section> 
+
+  <section class="callouts"> 
+     <div>
+        <h2>Join Us!</h2>
+        <a href="https://www.woodenshoebooks.org/mission.html#volunteerinfo">Volunteer Info</a>
+     </div>
+     <div>
+        <h2>Get the Inside Scoop</h2>
+        <a href="mailto:shoeannounce@lists.riseup.net">Email Signup</a>
+     </div>
+  </section> 
+
+  <footer>
+    Wooden Shoe Books - 704 South Street - Philadelphia, PA 19147 - sabot@woodenshoebooks.com - (215) 413-0999
+  </footer>
+</body>
+</html>
+
