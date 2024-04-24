@@ -36,6 +36,7 @@
         <style>
 body {
     background: black;
+    font-family: Arial, sans-serif;
     margin: 0; /* Reset default margins */
 }
 
@@ -45,32 +46,41 @@ header {
     background: yellow;
 }
 
-header a {
+a {
   text-decoration: none;
 }
-
 
 header img {
     max-width: 80%; /* Limit logo size for smaller screens */
     height: auto;  
 }
 
-ul {
+.call-to-action {
     list-style-type: none; /* Removes bullets */
     padding: 0; /* Removes default padding */
 }
 
-ul li {
+.call-to-action li {
     padding: 10px; /* Adds padding between links */
 }
 
-ul li a {
+.call-to-action li a {
     display: block; /* Makes the link fill the li for larger clickable area */
     padding: 8px; /* Additional padding for each link */
-    text-decoration: none; /* Optional: removes underline from links */
     font-size: 22px; /* Sets the font size to 18px */
 }
 
+.promotions {
+    list-style-type: none; /* Removes bullets */
+    padding: 0; /* Removes default padding */
+    text-align: center;
+}
+
+.promotions li {
+    padding: 10px; /* Adds padding between links */
+    font-size: 17px;
+    border-bottom: 1px solid #ccc; /* Adds a bottom border to each list item */
+}
 
 .main-content {
     background: #ff00e4;
@@ -98,13 +108,16 @@ ul li a {
     box-shadow: 0 2px 4px rgba(0,0,0,.5);
 }
 
+.nowrap {
+    white-space: nowrap;
+}
+
 .infobar a {
     color: #f2f2f2;
     font-family: 'Courier New', Courier, monospace;
+    font-size: clamp(14px, 2vw, 18px);
     text-align: center;
-    padding: 10px 10px;
-    text-decoration: none;
-    font-size: 17px;
+    padding: 7px 0px;
     margin: 0 10px;
     transition: background-color 0.3s ease;
 }
@@ -124,18 +137,26 @@ ul li a {
 .navbar a {
     color: #f2f2f2;
     font-family: 'Courier New', Courier, monospace;
+    font-size: clamp(14px, 2vw, 18px);
     text-align: center;
-    padding: 10px 10px;
-    text-decoration: none;
-    font-size: 17px;
-    margin: 0 10px;
+    padding: 7px 0px;
+    margin: 0 20px;
     transition: background-color 0.3s ease;
+}
+
+#storeImage {
+    width: 100%;
+    height: auto;
+}
+
+#promoImage {
+    width: 100%;
+    height: auto;
 }
 
 .responsive-calendar {
     position: relative;
-    padding-bottom: 75%; /* Adjust this value based on the aspect ratio you prefer */
-    height: 0;
+    height: 500px;
     overflow: hidden;
 }
 .responsive-calendar iframe {
@@ -166,22 +187,23 @@ footer {
     <body>
 
         <div class="infobar">
-            <a href="https://maps.app.goo.gl/vVqfdARy7zdKvmag6" target="_blank">704 South Street Philadelphia, PA 19147</a>
-            <a href="tel:+12154130999">215-413-0999</a>
+            <a href="https://maps.app.goo.gl/vVqfdARy7zdKvmag6" target="_blank">704 South St Philadelphia PA 19147</a>
+            <a class="nowrap" href="tel:+12154130999">215-413-0999</a>
         </div>
 
         <header> 
         <a href="index.html">
-            <img src="logos/sabot_right.gif" alt="Sabot">  
+            <img src="logos/sabot_right.gif" alt="A Sabot (Shoe) Logo">  
             <img src="logos/logo.gif" alt="Wooden Shoe Books Logo"> 
         </a>
         </header> 
 
-        <div class="navbar">
+        <nav class="navbar">
             <a href="mission.html">&#11088; Mission</a>
             <a href="history.html">&#128220; History</a>
-            <a href="calendar.html">&#128197; Events Calendar</a>
-        </div>
+            <a href="calendar.html">&#128197; <span class="nowrap">Events Calendar</span></a>
+        </nav>
+
 
 
         <section class="main-content"> 
@@ -189,48 +211,25 @@ footer {
             
             <p>Here are our upcoming Events. If you'd like to propose an event you can <a href="mailto:events@woodenshoebooks.com">send us an email</a>.</p>
 
-            <p>View the full calendar in google calendar via <a href="https://calendar.google.com/calendar/embed?src=t8qmive63n27mdj7gt03ntc2u8@group.calendar.google.com">&#128197; this link</a></p>
              <div class="responsive-calendar">
-                <iframe src="https://calendar.google.com/calendar/embed?src=t8qmive63n27mdj7gt03ntc2u8@group.calendar.google.com" style="border: 0" frameborder="0" scrolling="no"></iframe>
+                <iframe src="https://calendar.google.com/calendar/embed?src=t8qmive63n27mdj7gt03ntc2u8@group.calendar.google.com&mode=AGENDA" style="border: 0" frameborder="0" scrolling="no"></iframe>
             </div>
 
 
             </div>
         </section> 
+        
 
-        <div class="navbar">
+        <nav class="navbar">
             <a href="https://www.woodenshoebooks.org/reviews.html">&#128218; Publications</a>
             <a href="https://www.woodenshoebooks.org/links.html">&#128279; Links</a>
             <a href="https://www.paypal.com/donate?hosted_button_id=4XWP3BLV3FUWE" target="_top">&#129330; Donate</a>
-        </div>
+        </nav>
 
         <div class="infobar">
             <a href="https://maps.app.goo.gl/vVqfdARy7zdKvmag6" target="_blank">704 South Street Philadelphia, PA 19147</a>
-            <a href="tel:+12154130999">215-413-0999</a>
+            <a class="phone-number" href="tel:+12154130999">215-413-0999</a>
         </div>
-
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                const images = [
-                    'posters/1.jpg',
-                    'posters/2.jpg',
-                    'posters/3.jpg',
-                    // Add more image paths as needed
-                ];
-
-                let currentIndex = 0;
-
-                function rotatePosterImage() {
-                    const imgElement = document.getElementById('promoImage');
-                    imgElement.src = images[currentIndex];
-                    currentIndex = (currentIndex + 1) % images.length;
-                }
-
-                rotatePosterImage(); // Initial call to display the first image
-                setInterval(rotatePosterImage, 6000);
-            });
-
-        </script>
 
     </body>
 </html>

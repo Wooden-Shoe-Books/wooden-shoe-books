@@ -36,6 +36,7 @@
         <style>
 body {
     background: black;
+    font-family: Arial, sans-serif;
     margin: 0; /* Reset default margins */
 }
 
@@ -45,7 +46,7 @@ header {
     background: yellow;
 }
 
-header a {
+a {
   text-decoration: none;
 }
 
@@ -54,22 +55,32 @@ header img {
     height: auto;  
 }
 
-ul {
+.call-to-action {
     list-style-type: none; /* Removes bullets */
     padding: 0; /* Removes default padding */
 }
 
-ul li {
+.call-to-action li {
     padding: 10px; /* Adds padding between links */
 }
 
-ul li a {
+.call-to-action li a {
     display: block; /* Makes the link fill the li for larger clickable area */
     padding: 8px; /* Additional padding for each link */
-    text-decoration: none; /* Optional: removes underline from links */
     font-size: 22px; /* Sets the font size to 18px */
 }
 
+.promotions {
+    list-style-type: none; /* Removes bullets */
+    padding: 0; /* Removes default padding */
+    text-align: center;
+}
+
+.promotions li {
+    padding: 10px; /* Adds padding between links */
+    font-size: 17px;
+    border-bottom: 1px solid #ccc; /* Adds a bottom border to each list item */
+}
 
 .main-content {
     background: #ff00e4;
@@ -97,13 +108,16 @@ ul li a {
     box-shadow: 0 2px 4px rgba(0,0,0,.5);
 }
 
+.nowrap {
+    white-space: nowrap;
+}
+
 .infobar a {
     color: #f2f2f2;
     font-family: 'Courier New', Courier, monospace;
+    font-size: clamp(14px, 2vw, 18px);
     text-align: center;
-    padding: 10px 10px;
-    text-decoration: none;
-    font-size: 17px;
+    padding: 7px 0px;
     margin: 0 10px;
     transition: background-color 0.3s ease;
 }
@@ -123,11 +137,10 @@ ul li a {
 .navbar a {
     color: #f2f2f2;
     font-family: 'Courier New', Courier, monospace;
+    font-size: clamp(14px, 2vw, 18px);
     text-align: center;
-    padding: 10px 10px;
-    text-decoration: none;
-    font-size: 17px;
-    margin: 0 10px;
+    padding: 7px 0px;
+    margin: 0 20px;
     transition: background-color 0.3s ease;
 }
 
@@ -161,29 +174,29 @@ footer {
     <body>
 
         <div class="infobar">
-            <a href="https://maps.app.goo.gl/vVqfdARy7zdKvmag6" target="_blank">704 South Street Philadelphia, PA 19147</a>
-            <a href="tel:+12154130999">215-413-0999</a>
+            <a href="https://maps.app.goo.gl/vVqfdARy7zdKvmag6" target="_blank">704 South St Philadelphia PA 19147</a>
+            <a class="nowrap" href="tel:+12154130999">215-413-0999</a>
         </div>
 
         <header> 
         <a href="index.html">
-            <img src="logos/sabot_right.gif" alt="Sabot">  
+            <img src="logos/sabot_right.gif" alt="A Sabot (Shoe) Logo">  
             <img src="logos/logo.gif" alt="Wooden Shoe Books Logo"> 
         </a>
         </header> 
 
-        <div class="navbar">
+        <nav class="navbar">
             <a href="mission.html">&#11088; Mission</a>
             <a href="history.html">&#128220; History</a>
-            <a href="calendar.html">&#128197; Events Calendar</a>
-        </div>
+            <a href="calendar.html">&#128197; <span class="nowrap">Events Calendar</span></a>
+        </nav>
 
 
         <section class="main-content"> 
             <div class="column">
-                <h2>We're Open-ish!</h2> 
-                <p>We aspire to be open from noon (or earlier) to 10pm, 7 days a week, but... we're all volunteers, and sometimes it just doesn't work out. If you're making a special trip to the Shoe it's a good idea to call ahead to make sure we're open: <a href="tel:+12154130999">215-413-0999</a></p> 
-                <img id="storeImage" src="store/1.jpg" alt="Store Image">
+                <h1>Wooden Shoe Books &amp; Records, Philly's Volunteer-Run Anarchist Infoshop Since 1976</h1>
+                <p><b>We're Open-ish!</b> We aspire to be open from noon (or earlier) to 10pm, 7 days a week, but... we're all volunteers, and sometimes it just doesn't work out. If you're making a special trip to the Shoe it's a good idea to call ahead to make sure we're open: <a href="tel:+12154130999">215-413-0999</a></p> 
+                <img id="storeImage" src="store/1.jpg" alt="A picture of the front of the Wooden Shoe Books Store">
             </div>
 
             <div class="column">
@@ -192,40 +205,40 @@ footer {
                 <p>Founded in 1976, the Wooden Shoe is an all volunteer, collectively-run, anarchist book store. Functioning within a system we oppose, we seek to be an example of one way things can function without anyone commanding or forcing us to think or act a certain way. We have no bosses, managers, or employeesand make all of our decisions through consensus rather than majority rule voting so as to empower those involved. We also identify as an infoshop, meaning that we serve as a space for people to gather, learn, and find out more about like-minded activities happening in their communities.</p>
 
                 <h2>Get Involved!</h2> 
-                <ul>
+                <ul class="call-to-action">
                     <li><a href="https://www.paypal.com/donate?hosted_button_id=4XWP3BLV3FUWE" target="_top">&#128519; Donate via PayPal</a></li>
                     <li><a href="mission.html#volunteer">&#128587; Volunteer Info</a></li>
                     <li><a href="mailto:shoeannounce@lists.riseup.net">&#10084;&#65039; Email List Signup</a></li>
                     <li><a href="mailto:wonderfulthings@woodenshoebooks.com">&#128231; Email Us</a></li>
-                    <li><a href="http://twitter.com/woodenshoebooks">&#128038; X/Twitter</a></li>
-                    <li><a href="https://www.facebook.com/WoodenShoeBooks">&#128100; Facebook</a></li>
+                    <li><a href="http://twitter.com/woodenshoebooks" target="_blank">&#128038; X/Twitter</a></li>
+                    <li><a href="https://www.facebook.com/WoodenShoeBooks" target="_blank">&#128100; Facebook</a></li>
                 </ul>
 
             </div> 
 
             <div class="column">
-                <img id="promoImage" src="" alt="Promotion Image">
-                <ul>
-                    <li>&#128213; 10% off hardcovers</li>
-                    <li>&#129489;&#8205;&#129309;&#8205;&#129489;&#129489;&#8205;&#129309;&#8205;&#129489; 20% off for reading groups</li>
-                    <li>&#129665; Books, not bombs! donate kids books!</li>
+                <img id="promoImage" src="" alt="Promotion posters, see text below for details">
+                <ul class="promotions">
+                    <li>&#128213; 10% off ALL full-price hardcover books &#128213;</li>
+                    <li>&#129489;&#8205;&#129309;&#8205;&#129489;&#129489;&#8205;&#129309;&#8205;&#129489; 20% off for reading groups that buy 3 or more books, for more info email <a href="mailto:readinggroups@woodenshoebooks.org">readinggroups@woodenshoebooks.org</a>&#129489;&#8205;&#129309;&#8205;&#129489;&#129489;&#8205;&#129309;&#8205;&#129489;</li>
+                    <li>&#129665; Kids' Books, Not Bombs! donate books and/or cash to kids and teens, for more info email <a href="mailto:wonderfulthings@woodenshoebooks.org">wonderfulthings@woodenshoebooks.org</a>&#129665;</li>
                 </ul>
 
                 <h2>"The Peoples Computer"</h2>
-                <p>We have an  Internet-connected computer available for free public use (sorry; no printer) <a href="https://www.woodenshoebooks.org/flyers/WSB-PC-Policy.pdf">Here's our public-use Policy.</a></p>
+                <p>We have an  Internet-connected computer available for free public use (sorry; no printer) <a href="forms/PC-policy.pdf">Here's our public-use Policy.</a></p>
 
             </div>
         </section> 
 
-        <div class="navbar">
+        <nav class="navbar">
             <a href="https://www.woodenshoebooks.org/reviews.html">&#128218; Publications</a>
             <a href="https://www.woodenshoebooks.org/links.html">&#128279; Links</a>
             <a href="https://www.paypal.com/donate?hosted_button_id=4XWP3BLV3FUWE" target="_top">&#129330; Donate</a>
-        </div>
+        </nav>
 
         <div class="infobar">
             <a href="https://maps.app.goo.gl/vVqfdARy7zdKvmag6" target="_blank">704 South Street Philadelphia, PA 19147</a>
-            <a href="tel:+12154130999">215-413-0999</a>
+            <a class="phone-number" href="tel:+12154130999">215-413-0999</a>
         </div>
 
         <script>
