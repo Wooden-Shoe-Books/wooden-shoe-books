@@ -49,6 +49,7 @@ header a {
   text-decoration: none;
 }
 
+
 header img {
     max-width: 80%; /* Limit logo size for smaller screens */
     height: auto;  
@@ -131,14 +132,18 @@ ul li a {
     transition: background-color 0.3s ease;
 }
 
-#storeImage {
-    width: 100%;
-    height: auto;
+.responsive-calendar {
+    position: relative;
+    padding-bottom: 75%; /* Adjust this value based on the aspect ratio you prefer */
+    height: 0;
+    overflow: hidden;
 }
-
-#promoImage {
+.responsive-calendar iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 footer { 
@@ -181,38 +186,14 @@ footer {
 
         <section class="main-content"> 
             <div class="column">
-                <h2>We're Open-ish!</h2> 
-                <p>We aspire to be open from noon (or earlier) to 10pm, 7 days a week, but... we're all volunteers, and sometimes it just doesn't work out. If you're making a special trip to the Shoe it's a good idea to call ahead to make sure we're open: <a href="tel:+12154130999">215-413-0999</a></p> 
-                <img id="storeImage" src="store/1.jpg" alt="Store Image">
+            
+            <p>Here are our upcoming Events. If you'd like to propose an event you can <a href="mailto:events@woodenshoebooks.com">send us an email</a>.</p>
+
+            <p>View the full calendar in google calendar via <a href="https://calendar.google.com/calendar/embed?src=t8qmive63n27mdj7gt03ntc2u8@group.calendar.google.com">&#128197; this link</a></p>
+             <div class="responsive-calendar">
+                <iframe src="https://calendar.google.com/calendar/embed?src=t8qmive63n27mdj7gt03ntc2u8@group.calendar.google.com" style="border: 0" frameborder="0" scrolling="no"></iframe>
             </div>
 
-            <div class="column">
-                <p><b>What Is Anarchism? What Is The Wooden Shoe?</b> To put it simply, anarchism is the the political philosophy that people are better off making decisions for themselves, and communities making decisions for their communities, rather than having any centralized power/governing body do it for them. Furthermore, anarchism is opposed to capitalism and all systems of oppression that attempt to exploit or control.</p>
-
-                <p>Founded in 1976, the Wooden Shoe is an all volunteer, collectively-run, anarchist book store. Functioning within a system we oppose, we seek to be an example of one way things can function without anyone commanding or forcing us to think or act a certain way. We have no bosses, managers, or employeesand make all of our decisions through consensus rather than majority rule voting so as to empower those involved. We also identify as an infoshop, meaning that we serve as a space for people to gather, learn, and find out more about like-minded activities happening in their communities.</p>
-
-                <h2>Get Involved!</h2> 
-                <ul>
-                    <li><a href="https://www.paypal.com/donate?hosted_button_id=4XWP3BLV3FUWE" target="_top">&#128519; Donate via PayPal</a></li>
-                    <li><a href="mission.html#volunteer">&#128587; Volunteer Info</a></li>
-                    <li><a href="mailto:shoeannounce@lists.riseup.net">&#10084;&#65039; Email List Signup</a></li>
-                    <li><a href="mailto:wonderfulthings@woodenshoebooks.com">&#128231; Email Us</a></li>
-                    <li><a href="http://twitter.com/woodenshoebooks">&#128038; X/Twitter</a></li>
-                    <li><a href="https://www.facebook.com/WoodenShoeBooks">&#128100; Facebook</a></li>
-                </ul>
-
-            </div> 
-
-            <div class="column">
-                <img id="promoImage" src="" alt="Promotion Image">
-                <ul>
-                    <li>&#128213; 10% off hardcovers</li>
-                    <li>&#129489;&#8205;&#129309;&#8205;&#129489;&#129489;&#8205;&#129309;&#8205;&#129489; 20% off for reading groups</li>
-                    <li>&#129665; Books, not bombs! donate kids books!</li>
-                </ul>
-
-                <h2>"The Peoples Computer"</h2>
-                <p>We have an  Internet-connected computer available for free public use (sorry; no printer) <a href="https://www.woodenshoebooks.org/flyers/WSB-PC-Policy.pdf">Here's our public-use Policy.</a></p>
 
             </div>
         </section> 

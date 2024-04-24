@@ -2,9 +2,7 @@
 The main website for woodenshoebooks.org
 
 # TODO
-* og tags and description
-* favicon
-
-
-
+* improve volunteer application
+* deploy site
+* test
 
