@@ -1,8 +1,6 @@
 # wooden-shoe-books
 The main website for woodenshoebooks.org
 
-# TODO
-* deploy site
-* test
-
+# NOTE
+The site as deployed may contain updates beyond what is shown in this repo, please diff it before deleting the current site. 
 
