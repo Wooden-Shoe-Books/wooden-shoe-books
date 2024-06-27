@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Standard favicon -->
+        <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+        <!-- Recommended favicon format -->
+        <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+
+        <!-- Apple Touch Icons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+        <!-- For Android -->
+        <link rel="manifest" href="/site.webmanifest">
+        <meta name="theme-color" content="#ffffff">
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://www.woodenshoebooks.org/">
+        <meta property="og:title" content="Wooden Shoe Books &amp; Records">
+        <meta property="og:description" 
+              content="Founded in 1976, the Wooden Shoe is an all volunteer, collectively-run, anarchist book store. Functioning within a system we oppose, we seek to be an example of one way things can function without anyone commanding or forcing us to think or act a certain way. We have no bosses, managers, or employeesand make all of our decisions through consensus rather than majority rule voting so as to empower those involved. We also identify as an infoshop, meaning that we serve as a space for people to gather, learn, and find out more about like-minded activities happening in their communities." />
+        <meta property="og:image" content="/android-chrome-512x512.png">
+        <meta property="og:image:width" content="512">
+        <meta property="og:image:height" content="512">
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image">
+
+        <title>Wooden Shoe Books &amp; Records</title>
+
+        <style>
+body {
+    background: black;
+    font-family: Arial, sans-serif;
+    margin: 0; /* Reset default margins */
+}
+
+header {
+    text-align: center;
+    padding: 15px 0; 
+    background: yellow;
+}
+
+a {
+  text-decoration: none;
+}
+
+header img {
+    max-width: 80%; /* Limit logo size for smaller screens */
+    height: auto;  
+}
+
+.call-to-action {
+    list-style-type: none; /* Removes bullets */
+    padding: 0; /* Removes default padding */
+}
+
+.call-to-action li {
+    padding: 10px; /* Adds padding between links */
+}
+
+.call-to-action li a {
+    display: block; /* Makes the link fill the li for larger clickable area */
+    padding: 8px; /* Additional padding for each link */
+    font-size: 22px; /* Sets the font size to 18px */
+}
+
+.promotions {
+    list-style-type: none; /* Removes bullets */
+    padding: 0; /* Removes default padding */
+    text-align: center;
+}
+
+.promotions li {
+    padding: 10px; /* Adds padding between links */
+    font-size: 17px;
+    border-bottom: 1px solid #ccc; /* Adds a bottom border to each list item */
+}
+
+.main-content {
+    background: #ff00e4;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+} 
+
+.column { 
+    background: white;
+    flex: 1;
+    margin: 10px;
+    padding: 15px;
+    border: 2px #ff00e4;
+}
+
+.infobar {
+    overflow: hidden;
+    background-color: black;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,.5);
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.infobar a {
+    color: #f2f2f2;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: clamp(16px, 2vw, 18px);
+    text-align: center;
+    padding: 7px 0px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+}
+
+
+.navbar {
+    overflow: hidden;
+    background-color: black;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,.5);
+}
+
+.navbar a {
+    color: #f2f2f2;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: clamp(16px, 2vw, 18px);
+    text-align: center;
+    padding: 7px 0px;
+    margin: 0 20px;
+    transition: background-color 0.3s ease;
+}
+
+#storeImage {
+    width: 100%;
+    height: auto;
+}
+
+#promoImage {
+    width: 100%;
+    height: auto;
+}
+
+footer { 
+    background-color: black;
+    border-top: 2px solid #FF00FF; /* Hot pink border */
+    text-align: center;
+    padding: 10px; 
+    font-size: 0.8em; /* Smaller text in the footer */
+} 
+
+  /* Simple Media Queries for Responsiveness */
+  @media screen and (max-width: 768px) {
+      .main-content {
+          flex-direction: column; /* Stack columns on smaller screens */
+      }
+  }
+        </style>
+
+    </head>
+    <body>
+
+        <div class="infobar">
+            <a href="https://maps.app.goo.gl/vVqfdARy7zdKvmag6" target="_blank"><span class="nowrap">704 South Street</span> <span class="nowrap">Philadelphia, PA 19147</span></a>
+            <a class="nowrap" href="tel:+12154130999">215-413-0999</a>
+        </div>
+
+        <header> 
+        <a href="index.html">
+            <img src="logos/sabot_right.gif" alt="A Sabot (Shoe) Logo">  
+            <img src="logos/logo.gif" alt="Wooden Shoe Books Logo"> 
+        </a>
+        </header> 
+
+        <nav class="navbar">
+            <a href="mission.html">&#11088; Mission</a>
+            <a href="history.html">&#128220; History</a>
+            <a href="calendar.html">&#128197; <span class="nowrap">Events Calendar</span></a>
+        </nav>
+
+
+
+        <section class="main-content"> 
+            <div class="column">
+                  
+              <h1>Book Reviews</h1>
+
+            <h2>A Timeless Classic Reexamined</h2>
+            <p>James Baldwin's "Go Tell It on the Mountain" remains as relevant today as it was upon its initial publication. Through the lens of modern liberal anarchism, Baldwin's critique of societal structures and the oppressive nature of organized religion resonates with renewed intensity.</p>
+            <p>The novel's exploration of personal liberation and the rejection of hierarchical power structures speaks to the core tenets of anarchist philosophy. Baldwin's portrayal of the Grimes family's struggles highlights the intersectionality of race, class, and religion, exposing the systemic inequalities that continue to plague our society.</p>
+            <p>In a world where the fight for social justice and equality is more crucial than ever, "Go Tell It on the Mountain" serves as a powerful reminder of the importance of questioning authority and challenging the status quo. Baldwin's masterpiece is not only a literary triumph but also a call to action for those who seek to dismantle oppressive systems and build a more equitable future.</p>
+            <p><em>Reviewed by Robot Carl on June 27, 2024</em></p>
+            <p><strong>Available now in hardcover for $29.</strong></p>
+
+
+<!--
+This is an HTML template for a book review. To use this template, replace the placeholder text (in all caps) with the relevant information for the book you are reviewing. The placeholders are explained in the comments above each section. Make sure to remove the placeholder text and replace it with your own content.
+-->
+
+<h2>BOOK_TITLE: A PERSPECTIVE_ADJECTIVE Examination</h2>
+
+<p>AUTHOR_NAME's "BOOK_TITLE" BOOK_DESCRIPTION from a PERSPECTIVE_NOUN perspective. BOOK_ANALYSIS_1</p>
+
+<p>BOOK_ANALYSIS_2</p>
+
+<p>In today's CURRENT_CONTEXT, "BOOK_TITLE" BOOK_RELEVANCE. BOOK_ANALYSIS_3</p>
+
+<p><em>Reviewed by REVIEWER_NAME on REVIEW_DATE</em></p>
+
+<p><strong>Available now in BOOK_FORMAT for PRICE.</strong></p>
+
+<!--
+Placeholder Explanations:
+- BOOK_TITLE: The title of the book being reviewed
+- PERSPECTIVE_ADJECTIVE: An adjective describing the perspective from which the book is being analyzed (e.g., thought-provoking, insightful, provocative)
+- AUTHOR_NAME: The name of the book's author
+- BOOK_DESCRIPTION: A brief description of the book's content or themes
+- PERSPECTIVE_NOUN: The specific perspective or lens through which the book is being examined (e.g., modern liberal anarchism, feminist theory, post-colonial critique)
+- BOOK_ANALYSIS_1, BOOK_ANALYSIS_2, BOOK_ANALYSIS_3: Three separate sentences or paragraphs providing analysis of the book from the chosen perspective
+- CURRENT_CONTEXT: A description of the current social, political, or cultural context in which the book's themes are particularly relevant
+- BOOK_RELEVANCE: A sentence explaining the book's relevance or importance in the current context
+- REVIEWER_NAME: The name of the person reviewing the book
+- REVIEW_DATE: The date the review was written
+- BOOK_FORMAT: The format in which the book is available (e.g., hardcover, paperback, ebook)
+- PRICE: The price of the book in the specified format
+-->                 
+            
+            </div> 
+
+        </section> 
+        
+
+        <div class="infobar">
+            <a href="https://maps.app.goo.gl/vVqfdARy7zdKvmag6" target="_blank"><span class="nowrap">704 South Street</span> <span class="nowrap">Philadelphia, PA 19147</span></a>
+            <a class="nowrap" href="tel:+12154130999">215-413-0999</a>
+        </div>
+
+    </body>
+</html>
+
